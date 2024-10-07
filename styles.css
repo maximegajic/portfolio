@@ -1,0 +1,243 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-image: url(images/fond.jpeg);
+    background-size: cover;
+}
+
+header {
+    background-color: #1c6d75;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Conteneur Flex */
+.container {
+    display: flex; /* Utiliser Flexbox pour aligner les sections */
+    justify-content: space-between; /* Espacer les sections */
+    align-items: flex-start; /* Aligner les sections en haut */
+    flex-wrap: wrap; /* Permettre le passage à la ligne */
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 1rem;
+    position: relative;
+    top: 100px; /* Décale toutes les sections en bas */
+}
+
+#education {
+    padding: 50px;
+    background-image: url(images/fond2.avif);
+    background-size: cover;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin-left: 370px;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+.timeline-date {
+    width: 20%;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 35px;
+    color: rgb(41, 30, 142);
+}
+
+.timeline-content {
+    width: 75%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 3px solid #1c6d75;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #666;
+}
+
+
+
+
+#languages, #technical-skills h2 {
+    text-align: center; /* Centrer tous les titres des sections */
+}
+
+ul {
+    padding-left: 90px; /* Espacement à gauche */
+    list-style-type: none; /* Pas de puces par défaut */
+    display: flex;
+    justify-content: center; /* Centre le contenu */
+    flex-wrap: wrap; /* Permettre le passage à la ligne */
+}
+
+/* Éléments de liste */
+li {
+    display: list-item; /* Force les puces même en inline */
+    margin-right: 100px; /* Espacement entre les éléments */
+}
+
+/* Images */
+img {
+    display: block;
+    height: auto; /* Conserve le ratio d'aspect */
+}
+
+#technical-skills img {
+    width: 80px; /* Taille des images des compétences techniques */
+}
+
+#languages img {
+    width: 120px; /* Taille des images des langues */
+}
+
+/* Styles pour le logo de grande taille */
+#large-logo {
+    width: 300px;
+}
+
+#about, #projects {
+    top: 0;
+    margin-bottom: -100px;
+}
+
+.project {
+    display: flex;
+    align-items: center; /* Aligne l'image et le texte au centre */
+    margin-bottom: 100px; /* Espacement entre les projets */
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.project.reverse {
+    flex-direction: row-reverse; /* Inverse l'ordre pour alterner */
+}
+
+.project-image {
+    width: 400px; /* Ajuste la taille de l'image */
+    height: auto;
+}
+
+.project-text {
+    max-width:900px; /* Limite la largeur du texte */
+}
+
+
+.project-text h2 {
+    margin: 0 0 10px; /* Espacement autour du titre */
+}
+
+.project-text p {
+    margin: 0; /* Enlève l'espacement par défaut */
+    flex: 1;
+    text-align: justify;
+    font-size: larger;
+}
+
+.tech-stack {
+    color: rgb(214, 137, 21);
+    font-weight: bold;
+    margin-left: 10px; /* Espace entre le titre et "React Native" */
+    font-size: 2rem; /* Taille du texte en fonction de ce que tu préfères */
+}
+
+
+/* Style pour la section "About" */
+#about p {
+    font-size: large;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: #1c6d75;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    top: 170px; /* Décalage pour le footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, .footer-right {
+    text-align: left; /* Alignement par défaut à gauche */
+}
+
+.footer-left h4 {
+    margin-bottom: 2px; /* Espacement sous le titre */
+}
+
+.CV {
+    display: flex; /* Utiliser Flexbox pour les CV */
+    gap: 20px; /* Espace entre les éléments */
+}
+
+/* Centre du footer */
+.footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centre horizontalement */
+}
+
+.footer-center p {
+    margin-bottom: 5px; /* Espacement sous le texte */
+}
+
+.footer-center img {
+    width: 40px; /* Taille des logos */
+}
+
+/* Espacement entre les logos */
+.logo {
+    display: flex;
+    gap: 60px; /* Espacement entre les logos */
+    margin-left: 10px;
+}
