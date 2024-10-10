@@ -50,8 +50,9 @@ section {
 
 #education {
     padding: 2%;
-    background-image: url(images/fond2.avif);
+    background-image: url(images/fond2.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 
