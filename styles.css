@@ -103,7 +103,11 @@ h2 {
 }
 
 
-
+#technical-skills {
+    background-image: url(images/fond2.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 #languages, #technical-skills h2 {
     text-align: center; /* Centrer tous les titres des sections */
