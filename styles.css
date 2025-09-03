@@ -32,14 +32,27 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;   /* inline-block pour pouvoir mettre du padding */
     margin: 0 8%;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    background-color: #14555c; /* couleur de fond de la case */
+    padding: 10px 20px;        /* espace interne pour donner une forme de bouton */
+    border-radius: 8px;        /* coins arrondis */
+    font-weight: bold;         /* texte plus visible */
+    transition: 0.3s;          /* effet fluide au survol */
 }
+
+/* Effet au survol */
+nav ul li a:hover {
+    background-color: #1c6d75; /* couleur un peu plus claire au hover */
+    transform: scale(1.05);    /* léger zoom */
+}
+
+
 
 /* Sections */
 section {
@@ -146,6 +159,30 @@ img {
     width: 300px;
 }
 
+#technical-skills ul li img {
+    width: 80px;      /* largeur fixe */
+    height: 80px;     /* hauteur fixe */
+    object-fit: contain; /* garde les proportions sans déformation */
+}
+
+#technical-skills ul li {
+    display: flex;
+    flex-direction: column;   /* Place l'image au-dessus du texte */
+    align-items: center;      /* Centre horizontalement */             
+    text-align: center;       /* Centre le texte */
+}
+
+#technical-skills ul li span {
+    margin-top: 10px;         /* Espace entre l'image et le texte */
+    font-size: 1.1em;         /* Taille un peu plus grande */
+}
+#languages ul li img {
+    width: 150px;     
+    height: 105px;     
+    object-fit: contain;
+}
+
+
 hr {
     border: 0;
     height: 4px;           /* épaisseur */
@@ -168,6 +205,29 @@ hr {
     flex-wrap: wrap;
     padding-top: 15px;
 }
+
+.project-title-link {
+    color: inherit; /* garde la couleur du titre */
+    text-decoration: none; /* pas de soulignement */
+    transition: color 0.3s;
+}
+
+.project-title-link:hover {
+    color: #1c6d75; /* met une couleur sympa au survol */
+    text-decoration: underline;
+}
+
+.link-icon {
+    font-size: 0.9em;
+    margin-left: 5px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.project-title-link:hover .link-icon {
+    opacity: 1;
+}
+
 
 .project.reverse {
     flex-direction: row-reverse; /* Inverse l'ordre pour alterner */
